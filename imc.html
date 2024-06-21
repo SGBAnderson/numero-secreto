@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+//function calculaImc(altura, peso) {
+
+    //var imc = peso / (altura * altura);
+    //return imc; 
+    //}
+
+//var imcFlavio = calculaImc(1.71, 73);
+//var imcAmigo = calculaImc(1.72, 68);
+
+//mostra(imcFlavio);
+//mostra(imcAmigo);
+
+
+
+//aqui começa o exercicio 02 Futebol. Covertendo Texto em Números.
+
+//parseInt() faz a coversão de um string para numero.
+
+var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+
+var empates = parseInt(prompt("Entre com o número de empates."));
+
+var pontos = vitorias  * 3 + empates;
+
+//A função prompt retorna o que digitamos como string e esse retorno é passado para parseInt.
+//É esta função que recebe uma string e a converte para número.
+//Agora, como temos dois números ligados, não acontecerá mais a concatenação, mas sim a soma.
+
+if(pontos > 28) {
+
+    mostra("Seu time está melhor do que no ano passado.");
+
+}
+
+if(pontos < 28) {
+
+    mostra("Seu time está pior do que no ano passado.");
+}
+
+if(pontos == 28) {
+
+    mostra("Seu time está igual igual ao ano passado.");
+
+}
+
+mostra("Os pontos do seu time são " + pontos);
+
+///Usamos o método parseFloat(): para converter os números inteiros em numeros reais. 
+//Usamos o método parseInt(): para converter uma STRING em um numero inteiro.
+
+
+
+</script>
+

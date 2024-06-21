@@ -1,0 +1,52 @@
+<!-- O Chrome, a partir da versão 55, passou a detectar automaticamente o encoding dos 
+Então, é possível pensar que não é mais necessária a tag <meta charset="UTF-8">.
+No entanto, ela deve continuar a ser usada, porque nem todos os navegadores detectam o encoding automaticamente, 
+sendo assim, é uma boa prática manter a tag <meta> indicando o charset usado na hora de criar o arquivo.
+O Chrome, a partir da versão 55, passou a detectar automaticamente o encoding dos arquivos.
+Então, é possível pensar que não é mais necessária a tag <meta charset="UTF-8">.
+No entanto, ela deve continuar a ser usada, porque nem todos os navegadores detectam o encoding automaticamente, sendo assim, 
+é uma boa prática manter a tag <meta> indicando o charset usado na hora de criar o arquivo. -->
+
+<meta charset="UTF-8">
+<h1>Meu primeiro Teste!</h1>
+<br>
+
+<!-- A instrução alert recebe um texto e todo texto em JavaScript é 
+definido entre aspas. Exemplos de texto
+
+<script>
+    document.write("A idade do Flávio é");
+    document.write("18");
+</script> -->
+
+<meta charset="UTF-8">
+
+<script>
+
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>");
+    document.write("Joaquim tem " + (ano - 1996) + " anos");
+    document.write("<br>");
+
+    ano = 2017;
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write("<br>");
+    
+        var idadeFlavio = 39;
+        var idadeJoaquim = 20;
+        var idadeBarney = 41;
+        
+        var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+        
+//Math.round() calcula a media e imprime na tela o resultado arredondado
+
+        document.write("A média das idades é " + Math.round(media));
+        
+        var nome = "Flávio";
+        
+        document.write("<br>");
+        document.write("A idade de " + nome + " é " + idadeFlavio);
+        
+</script>
